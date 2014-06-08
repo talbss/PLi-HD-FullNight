@@ -2213,20 +2213,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="SubtitleDisplay" position="fill" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder" />
 
-  <screen name="AboutOE" position="fill" flags="wfNoBorder">
+  <screen name="About" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="KeyInfoTemplate"/>
-    <eLabel text="= Release notes" position="1050,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1"/>
-    <widget source="lab1" render="Label" position="10,455" size="500,25" font="Regular; 24" transparent="0" zPosition="2" foregroundColor="greenlight" halign="center"/>
-    <widget source="lab2" render="Label" position="10,480" size="500,20" font="Regular; 19" transparent="0" zPosition="2" foregroundColor="greenlight" halign="center"/>
-    <widget source="lab3" render="Label" position="10,500" size="500,20" font="Regular; 19" transparent="0" zPosition="1" foregroundColor="greenlight" halign="center"/>
-    <widget name="AboutScrollLabel" scrollbarMode="showOnDemand" font="Regular;20" position="520,90" size="755,583" transparent="1"/>
-    <eLabel text="Pli-Full-HD-Night by DeLaGrooV" position="5,530" size="520,30" font="Regular; 20" halign="center" transparent="1" zPosition="1" valign="center" foregroundColor="greenlight"/>
+    <panel name="ButtonTemplate_2"/>
+    <eLabel text="About" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget name="AboutScrollLabel" font="Regular;22" position="635,125" size="580,500" zPosition="2" halign="center" />
   </screen>
 
-  <screen flags="wfNoBorder" name="AboutReleaseNotes" position="fill" title="Release Notes">
-    <panel name="PigTemplate"/>
-    <widget name="list" font="Regular;22" position="530,110" size="740,510" transparent="1" />
+  <screen name="CommitInfo" position="fill" flags="wfNoBorder">
+    <panel name="BasicTemplate"/>
+    <eLabel text="Latest Commits" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <widget name="AboutScrollLabel" font="Regular;22" position="85,125" size="1130,500" zPosition="2" halign="left" />
   </screen>
 
   <screen flags="wfNoBorder" name="TranslationInfo" position="fill" >
