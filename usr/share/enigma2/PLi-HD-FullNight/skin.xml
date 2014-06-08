@@ -921,11 +921,11 @@
 
   <!-- Softcam Setup -->
 
-  <screen name="ScSelection" position="fill" flags="wfNoBorder">
+  <screen name="SoftcamSetup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
-    <eLabel text="Softcam Setup" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="entries" position="530,110" size="740,525" scrollbarMode="showOnDemand"/>
+    <panel name="ButtonTemplate_RGB"/>
+    <widget name="config" position="530,110" size="740,100" scrollbarMode="showOnDemand"/>
+    <widget name="info" position="530,210" size="740,425" scrollbarMode="showOnDemand" font="Fixed;18"/>
   </screen>
 
   <!-- ChoiceBox -->
@@ -2651,7 +2651,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="OpenWebifConfig" position="fill" title="OpenWebif Configuration" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_2"/>
-    <widget name="config" position="590,110" size="670,160" scrollbarMode="showOnDemand" />
+    <widget name="config" position="590,110" size="670,480" scrollbarMode="showOnDemand" />
     <widget name="lab1" position="590,590" halign="center" size="670,28" zPosition="1" font="Regular;24" valign="top" transparent="1" />
   </screen>
 
@@ -3420,47 +3420,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="CSFDLCDSummaryElse" position="0,0" size="96,64">
     <widget name="headline" position="0,0" size="96,14" font="FdLcD;12"/>
     <widget name="infomovie" position="0,18" size="96,42" font="FdLcD;10"/>
-  </screen>
-
-  <!-- XPower plugin -->
-
-  <screen name="xpower" flags="wfNoBorder" position="fill" title="XPower">
-    <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
-    <panel name="KeyMenuTemplate"/>
-    <ePixmap pixmap="PLi-HD-FullNight/buttons/key_ok.png" alphatest="on" position="40,684" size="35,25" />
-    <widget source="config" render="Listbox" position="610,110" size="565,450" scrollbarMode="showOnDemand">
-	<convert type="TemplatedMultiContent">
-		{"template": [
-				MultiContentEntryPixmapAlphaTest(pos = (15, 1), size = (48, 48), png = 0), # index 0 is the PC pixmap (for pixmap it is png= )
-				MultiContentEntryText(pos = (90, 9), size = (120, 35), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the Name (for text it is text= )
-				MultiContentEntryPixmapAlphaTest(pos = (220, 5), size = (40, 40), png = 2), # index 2 is the system pixmap
-				MultiContentEntryText(pos = (290, 3), size = (250, 20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the IP
-				MultiContentEntryText(pos = (290, 28), size = (250, 20), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the MAC
-				],
-			"fonts": [gFont("Regular", 30),gFont("Regular", 18)],
-			"itemHeight": 50
-		}
-	</convert>
-    </widget>
-    <widget name="statusbar" position="610,590" size="420,22" font="Regular;18" />
-  </screen>
-
-  <screen flags="wfNoBorder" name="xpowerHelp" position="fill" title="XPower Help">
-    <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
-    <widget name="HelpScrollLabel" position="630,110" size="520,400" font="Regular;20" scrollbarMode="showOnDemand"/>
-    <ePixmap pixmap="~/img/author.png" position="630,530" zPosition="10" size="25,25" transparent="1" alphatest="on" />
-    <widget name="version" position="670,535" size="420,20" font="Regular;18" />
-    <widget name="statusbar" position="630,600" size="470,22" font="Regular;18" />
-  </screen>
-
-  <screen flags="wfNoBorder" name="xpowerEdit" position="fill" title="XPower Configuration PC">
-    <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_4"/>
-    <widget name="config" position="630,110" size="520,250" scrollbarMode="showOnDemand"/>
-    <widget name="0" pixmaps="skin_default/buttons/button_green_off.png,skin_default/buttons/button_green2.png" position="610,113" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
-    <widget name="statusbar" position="610,300" size="420,22" font="Regular;18" />
   </screen>
 
   <!-- HDD Sleep plugin -->
