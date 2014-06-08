@@ -542,13 +542,13 @@
     <widget source="session.FrontendStatus" render="Label" position="1168,65" size="50,26" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;14">
       <convert type="FrontendInfo">BER</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="60,140" size="570,24" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
+    <widget source="session.Event_Now" render="Label" position="60,140" size="570,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
           <convert type="EventName">NameNow</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="60,170" size="470,22" font="Regular;20" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+    <widget source="session.Event_Now" render="Label" position="60,170" size="470,24" font="Regular;20" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">Genre</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="430,170" size="200,22" font="Regular;20" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+    <widget source="session.Event_Now" render="Label" position="430,170" size="200,24" font="Regular;20" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">SmallRating</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="60,225" size="570,280" font="Regular; 20" zPosition="1" transparent="1">
@@ -557,10 +557,10 @@
     <widget source="session.Event_Next" render="Label" position="674,140" size="570,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="left">
           <convert type="EventName">NameNext</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="674,170" size="470,22" font="Regular;20" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+    <widget source="session.Event_Next" render="Label" position="674,170" size="470,24" font="Regular;20" halign="left" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">Genre</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="1044,170" size="200,22" font="Regular;20" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
+    <widget source="session.Event_Next" render="Label" position="1044,170" size="200,24" font="Regular;20" halign="right" foregroundColor="blue" backgroundColor="secondBG" transparent="1" zPosition="1">
           <convert type="EventName">SmallRating</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="674,225" size="570,280" font="Regular; 20" zPosition="1" transparent="1">
