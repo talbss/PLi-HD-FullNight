@@ -1920,9 +1920,9 @@
   </screen>
 
   <screen flags="wfNoBorder" name="Execute" position="fill" title="PPanel Entry">
-    <panel name="PigTemplate"/>
+    <panel name="BasicTemplate"/>
     <panel name="ButtonTemplate_YB"/>
-    <widget name="linelist" font="Regular;20" position="560,110" size="655,500" transparent="1" scrollbarMode="showOnDemand" />
+    <widget name="linelist" font="Fixed;16" position="25,110" size="1230,500" transparent="1" foregroundColor="white" scrollbarMode="showOnDemand" />
   </screen>
 
   <!-- TextBox -->
