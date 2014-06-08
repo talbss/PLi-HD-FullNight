@@ -2516,18 +2516,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
     <widget name="booklist" position="595,390" size="535,200" zPosition="2" scrollbarMode="showOnDemand" />
   </screen>
 
-  <!-- Video Fine Tune -->
-
-  <screen name="VideoFinetune" position="fill" flags="wfNoBorder">
-    <panel name="PigTemplate"/>
-    <widget source="Canvas" render="Canvas" position="530,55" size="720,576" />
-    <ePixmap pixmap="skin_default/buttons/key_1.png" zPosition="2" alphatest="on" position="40,684" size="35,25" />
-    <ePixmap pixmap="skin_default/buttons/key_2.png" zPosition="2" alphatest="on" position="75,684" size="35,25" />
-    <ePixmap pixmap="skin_default/buttons/key_3.png" zPosition="2" alphatest="on" position="110,684" size="35,25" />
-    <ePixmap pixmap="skin_default/buttons/key_4.png" zPosition="2" alphatest="on" position="145,684" size="35,25" />
-    <ePixmap pixmap="skin_default/buttons/key_5.png" zPosition="2" alphatest="on" position="180,684" size="35,25" />
-  </screen>
-
   <!-- Parental Control -->
 
   <screen name="ParentalControlSetup" position="fill" title="Parental control setup" flags="wfNoBorder">
