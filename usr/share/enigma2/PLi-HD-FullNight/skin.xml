@@ -512,18 +512,13 @@
   <!-- InfoBars -->
 
   <screen name="InfoBar" title="InfoBar" position="fill" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap alphatest="off" pixmap="PLi-HD-FullNight/infobar/hd.png" position="25,510" size="1230,195" zPosition="-1" />
+    <ePixmap alphatest="off" pixmap="PLi-HD-FullNight/infobar/hd.png" position="0,510" size="1280,220" zPosition="-1" />
     <panel name="InfoBarTemplate"/>
   </screen>
 
   <screen name="SecondInfoBar" title="Second InfoBar" position="fill" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap alphatest="off" pixmap="PLi-HD-FullNight/infobar/hd.png" position="25,510" size="1230,195" zPosition="-1" />
-    <eLabel position="25,25" size="960,100" backgroundColor="transpBlack" zPosition="0"/>
-    <eLabel position="990,25" size="265,100" backgroundColor="transpBlack" zPosition="0"/>
-    <eLabel position="25,130" size="613,75" backgroundColor="transpBlack" zPosition="0"/>
-    <eLabel position="642,130" size="613,75" backgroundColor="transpBlack" zPosition="0"/>
-    <eLabel position="25,210" size="613,300" backgroundColor="transpBlack" zPosition="0"/>
-    <eLabel position="642,210" size="613,300" backgroundColor="transpBlack" zPosition="0"/>
+    <eLabel position="fill" backgroundColor="transpBlack" zPosition="0"/>
     <widget source="session.CurrentService" render="Label" position="60,45" size="679,80" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;20" valign="top" halign="left">
       <convert type="PliExtraInfo">All</convert>
     </widget>
