@@ -917,7 +917,7 @@
     <widget name="scan_state" position="80,230" zPosition="2" size="510,30" valign="center" font="Regular;20" transparent="1" />
     <widget name="pass" position="80,290" size="480,30" valign="center" font="Regular;22" transparent="1" />
     <widget name="scan_progress" position="80,265" size="480,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
-    <widget name="servicelist" position="610,110" size="640,500" selectionDisabled="1" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="servicelist" position="610,110" size="640,500" selectionDisabled="1" scrollbarMode="showOnDemand"/>
   </screen>
 
   <!-- RecordPathSettings -->
@@ -1452,7 +1452,6 @@
     <panel name="ButtonTemplate_2S"/>
     <widget name="statuspic" position=" 710,635" size=" 48,48" alphatest="on" />
     <widget source="author" render="Label" position="590,110" size="570,30" zPosition="10" font="Regular;24" backgroundColor="background" transparent="1" />
-    <ePixmap pixmap="PLi-HD-FullNight/buttons/sel.png" position=" 590,140" size="670,30" alphatest="on" />
     <widget name="detailtext" position=" 590,175" size="670,260" font="Regular;20" backgroundColor="background" transparent="1" />
     <widget name="screenshot" position="500,450" size="350,150" alphatest="on" halign="left" />
     <widget name="divpic" position="0,0" size="0,0" />
@@ -1956,7 +1955,7 @@
     <widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="5,5" size="53,53" alphatest="on" />
     <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="5,5" size="53,53" alphatest="on" />
     <widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="5,5" size="53,53" alphatest="on" />
-    <widget name="list" position="100,100" size="480,375" selectionPixmap="PLi-HD/buttons/sel.png"/>
+    <widget name="list" position="100,100" size="480,375"/>
 	<applet type="onLayoutFinish">
 from enigma import eSize, ePoint
 if self.timerRunning:
@@ -2067,7 +2066,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="FastScanScreen" title="Fast Scan" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="config" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="config" position="530,110" size="690,500" scrollbarMode="showOnDemand"/>
     <widget name="introduction" position="530,500" size="700,30" font="Regular;24"/>
     <panel name="ButtonRed"/>
     <eLabel text="Cancel" position="185,683" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
