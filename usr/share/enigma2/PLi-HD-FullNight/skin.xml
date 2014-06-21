@@ -626,7 +626,7 @@
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="ServiceEvent" render="Progress" pixmap="PLi-HD-FullNight/window/progress.png" position="115,395" size="190,12" transparent="1" borderWidth="1" borderColor="grey">
+    <widget source="ServiceEvent" render="Progress" pixmap="PLi-HD-FullNight/window/progress.png" position="115,395" size="190,12" transparent="1" borderWidth="1" borderColor="darkgrey">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="20,420" size="490,210" backgroundColor="background" foregroundColor="grey" transparent="1" font="Regular; 20">
