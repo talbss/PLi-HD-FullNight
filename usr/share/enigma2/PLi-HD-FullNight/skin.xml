@@ -873,6 +873,10 @@
     <widget name="header" position="85,30" size="1085,55"  backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="530,110" size="740,525" scrollbarMode="showOnDemand" />
     <widget name="introduction" position="45,380" size="417,75" font="Regular;20" halign="center" />
+    <panel name="ButtonRed"/>
+    <eLabel text="Cancel" position="185,683" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <panel name="ButtonGreen"/>
+    <eLabel text="Scan" position="460,683" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
   <!-- Scan simple -->
@@ -882,6 +886,10 @@
     <widget name="header" position="85,30" size="1085,55"  backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
     <widget name="config" position="530,110" size="740,525" scrollbarMode="showOnDemand" />
     <widget name="footer" position="45,380" size="417,75" font="Regular;20" halign="center" />
+    <panel name="ButtonRed"/>
+    <eLabel text="Cancel" position="185,683" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <panel name="ButtonGreen"/>
+    <eLabel text="Scan" position="460,683" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
   <!-- Service Scan -->
@@ -2059,15 +2067,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
   <screen name="FastScanScreen" title="Fast Scan" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="config" position="530,110" size="740,500" scrollbarMode="showOnDemand" />
-    <widget name="introduction"  position="45,530" size="417,75" font="Regular;20" halign="center" />
+    <widget name="config" position="530,110" size="690,500" scrollbarMode="showOnDemand" selectionPixmap="PLi-HD/buttons/sel.png" />
+    <widget name="introduction" position="530,500" size="700,30" font="Regular;24"/>
+    <panel name="ButtonRed"/>
+    <eLabel text="Cancel" position="185,683" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
+    <panel name="ButtonGreen"/>
+    <eLabel text="Save" position="460,683" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" halign="left" />
   </screen>
 
   <screen name="FastScanStatus" title="Fast Scan" position="fill" flags="wfNoBorder">
     <panel name="BasicTemplate"/>
-    <widget name="frontend" pixmap="skin_default/icons/scan-s.png" position="80,17" size="64,64" zPosition="2" transparent="1" alphatest="on" />
-    <widget name="scan_state" position="85,110" zPosition="2" size="400,40" font="Regular;22" />
-    <widget name="scan_progress" position="85,155" size="400,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
+    <widget name="frontend" pixmap="skin_default/icons/scan-s.png" position="80,120" size="64,64" zPosition="2" transparent="1" alphatest="on" />
+    <widget name="scan_state" position="150,120" zPosition="2" size="480,30" valign="center" font="Regular;20" transparent="1" />
+    <widget name="scan_progress" position="150,155" size="480,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
   </screen>
 
   <!-- Nim setup -->
