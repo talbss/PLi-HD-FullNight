@@ -1080,7 +1080,7 @@
     <widget source="session.CurrentService" render="Label" position="348,328" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
       <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
     </widget>
-    <widget name="waitingtext" position="530,110" size="740,510" font="Regular;22" halign="center" valign="center" zPosition="4" />
+    <widget name="waitingtext" position="530,105" size="740,560" font="Regular;22" halign="center" valign="center" zPosition="4" />
     <widget name="chosenletter" position="530,110" size="740,510" foregroundColor="yellow" font="Regular;75" halign="center" valign="center" transparent="1" zPosition="4" />
     <widget name="list" position="530,105" size="740,560" scrollbarMode="showOnDemand" backgroundColor="background" itemHeights="75,53,28" fontSizesOriginal="21,20,18" fontSizesCompact="21,18" fontSizesMinimal="21,20" />
     <widget source="Service" render="Label" position="20,394" size="490,46" backgroundColor="background" foregroundColor="secondFG" font="Regular;19" halign="left"  transparent="1">
