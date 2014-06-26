@@ -137,7 +137,7 @@
   </screen>
 
   <screen name="TextTemplate">
-    <widget name="text" position="25,375" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="top" />
+    <widget name="text" position="25,30" size="760,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="top" />
   </screen>
 
   <screen name="SelectionTemplate">
@@ -852,7 +852,6 @@
   <screen name="Setup" title="Setup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="ButtonTemplate_2S"/>
-    <!--widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="50,410" zPosition="1" size="1,1" transparent="1" alphatest="on" /-->
     <widget name="config" position="530,110" size="740,500" backgroundColor="background" enableWrapAround="1" scrollbarMode="showOnDemand"/>
     <widget name="description" position="45,380" size="417,200" font="Regular;20" backgroundColor="background" foregroundColor="greenlight" valign="top"/>
   </screen>
@@ -861,7 +860,7 @@
 
   <screen name="ScanSetup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="header" position="85,30" size="1085,55"  backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" />
+    <widget name="header" position="25,30" size="1085,55"  backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" />
     <widget name="config" position="530,110" size="740,525" scrollbarMode="showOnDemand"/>
     <widget name="introduction" position="45,380" size="417,75" font="Regular;20" halign="center"/>
     <panel name="ButtonRed"/>
@@ -874,7 +873,7 @@
 
   <screen name="ScanSimple" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <widget name="header" position="85,30" size="1085,55"  backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" />
+    <widget name="header" position="25,30" size="1085,55"  backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" />
     <widget name="config" position="530,110" size="740,525" scrollbarMode="showOnDemand"/>
     <widget name="footer" position="45,380" size="417,75" font="Regular;20" halign="center"/>
     <panel name="ButtonRed"/>
@@ -931,7 +930,7 @@
 
   <!-- ChoiceBox -->
 
-  <screen name="ChoiceBox" title="Choice Box" position="fill" flags="wfNoBorder">
+  <screen name="ChoiceBox" title="" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
     <panel name="TextTemplate"/>
     <widget name="list" position="530,110" size="740,500" scrollbarMode="showOnDemand"/>
