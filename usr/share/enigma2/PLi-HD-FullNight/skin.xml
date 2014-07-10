@@ -91,7 +91,7 @@
 
 	<!-- Templates -->
 
-	<screen name="PlayerTemplate">
+	<screen name="PlayerTemplateBasic">
 		<widget source="session.CurrentService" render="Label" position="c-416,4" size="832,52" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -106,14 +106,18 @@
 		<widget source="session.CurrentService" render="Label" position="1035,31" size="117,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="right">
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD/buttons/rec.png" position="1160,53" size="20,20" zPosition="3" alphatest="on">
-			<convert type="ConditionalShowHide"/>
-		</widget>
 		<widget source="global.CurrentTime" render="Label" borderWidth="2" position="1052,3" size="100,25" backgroundColor="transparent" noWrap="1" zPosition="1" foregroundColor="foreground" font="Regular;22" valign="center" halign="right">
 			<convert type="ClockToText">Format:%-H:%M</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="c-100,70" size="200,25" zPosition="2" backgroundColor="transparent" foregroundColor="foreground" font="Regular;20" borderWidth="2" halign="center">
 			<convert type="PliExtraInfo">ResolutionString</convert>
+		</widget>
+	</screen>
+
+	<screen name="PlayerTemplate">
+		<panel name="PlayerTemplateBasic"/>
+		<widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD/buttons/rec.png" position="1160,53" size="20,20" zPosition="3" alphatest="on">
+			<convert type="ConditionalShowHide"/>
 		</widget>
 		<eLabel position="128,70" size="150,130" backgroundColor="transparent" borderWidth="2" font="Regular;25" borderColor="black" text=">" zPosition="1"/>
 	</screen>
@@ -975,7 +979,7 @@
 	<!-- Timeshift state -->
 
 	<screen name="TimeshiftState" position="0,45" zPosition="0" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="PlayerTemplate"/>
+		<panel name="PlayerTemplateBasic"/>
 		<widget name="state" position="128,70" size="150,30" zPosition="3" backgroundColor="transparent" borderWidth="2" font="Regular;25" borderColor="black"/>
 	</screen>
 
