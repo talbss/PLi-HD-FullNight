@@ -436,7 +436,7 @@
 		<widget source="global.CurrentTime" render="Label" borderWidth="2" position="60,583" size="69,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="white" font="Regular;24" valign="bottom">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" borderWidth="2" position="129,583" size="37,28" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="white" font="Regular;20" valign="bottom">
+		<widget source="global.CurrentTime" render="Label" borderWidth="2" position="119,583" size="37,29" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="white" font="Regular;20" valign="bottom">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
 		<widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD/buttons/rec.png" position="180,588" size="20,20" zPosition="3" alphatest="on">
