@@ -773,7 +773,7 @@
 		<widget source="Event" render="Label" position="780,110" size="380,24" transparent="1" foregroundColor="white" font="Regular;20" valign="top">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="Event" render="Progress" pixmap="PLi-HD-FullNight/infobar/pbar.png" position="520,135" size="710,8" transparent="1" borderWidth="2" borderColor="#33333a">
+		<widget source="Event" render="Progress" pixmap="PLi-HD-FullNight/infobar/pbargmepg.png" position="520,135" size="710,8" transparent="1" borderWidth="2" borderColor="#33333a">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="Event" render="Label" position="520,145" size="710,185" foregroundColor="grey" transparent="1" font="Regular;20">
