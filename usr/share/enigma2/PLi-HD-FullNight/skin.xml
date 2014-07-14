@@ -531,7 +531,7 @@
 		<widget source="session.FrontendStatus" render="Label" position="1153,27" size="100,16" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;14">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<eLabel name="agc" position="1057,65" size="40,16" borderWidth="1" borderColor="black" transparent="1" zPosition="1" text="AGC" font="Regular;14"/>
+		<eLabel name="agc" position="1057,45" size="40,16" borderWidth="1" borderColor="black" transparent="1" zPosition="1" text="AGC" font="Regular;14"/>
 		<widget source="session.FrontendStatus" render="Label" position="1097,45" size="50,16" borderWidth="1" borderColor="black" zPosition="1" backgroundColor="transpBlack" transparent="1" halign="right" font="Regular;14">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
