@@ -312,48 +312,48 @@
 		<widget source="key_green" render="Label" position="460,682" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
 	</screen>
 
-	<screen name="ButtonTemplate1">
+	<screen name="ButtonTemplateR">
 		<panel name="ButtonRed"/>
 		<widget name="red" position="185,682" size="220,28" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
 	</screen>
 
-	<screen name="ButtonTemplate2">
-		<panel name="ButtonTemplate1"/>
+	<screen name="ButtonTemplateRG">
+		<panel name="ButtonTemplateR"/>
 		<panel name="ButtonGreen"/>
 		<widget name="green" position="460,682" size="220,28" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
 	</screen>
 
-	<screen name="ButtonTemplate3">
-		<panel name="ButtonTemplate2"/>
+	<screen name="ButtonTemplateRGY">
+		<panel name="ButtonTemplateRG"/>
 		<panel name="ButtonYellow"/>
 		<widget name="yellow" position="735,682" size="220,28" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
 	</screen>
 
-	<screen name="ButtonTemplate4">
-		<panel name="ButtonTemplate3"/>
+	<screen name="ButtonTemplateRGYB">
+		<panel name="ButtonTemplateRGY"/>
 		<panel name="ButtonBlue"/>
 		<widget name="blue" position="1010,682" size="220,28" zPosition="1" transparent="1" font="Regular;24" halign="left"/>
 	</screen>
 
-	<screen name="ButtonTemplate1S">
+	<screen name="ButtonTemplateRS">
 		<panel name="ButtonRed"/>
 		<widget source="red" render="Label" position="185,682" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
 	</screen>
 
-	<screen name="ButtonTemplate2S">
-		<panel name="ButtonTemplate1S"/>
+	<screen name="ButtonTemplateRGS">
+		<panel name="ButtonTemplateRS"/>
 		<panel name="ButtonGreen"/>
 		<widget source="green" render="Label" position="460,682" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
 	</screen>
 
-	<screen name="ButtonTemplate3S">
-		<panel name="ButtonTemplate2S"/>
+	<screen name="ButtonTemplateRGYS">
+		<panel name="ButtonTemplateRGS"/>
 		<panel name="ButtonYellow"/>
 		<widget source="yellow" render="Label" position="735,682" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
 	</screen>
 
-	<screen name="ButtonTemplate4S">
-		<panel name="ButtonTemplate3S"/>
+	<screen name="ButtonTemplateRGYBS">
+		<panel name="ButtonTemplateRGYS"/>
 		<panel name="ButtonBlue"/>
 		<widget source="blue" render="Label" position="1010,682" size="220,28" backgroundColor="darkgrey" zPosition="2" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
 	</screen>
@@ -1266,7 +1266,7 @@
 
 	<screen name="ServiceInfo" position="fill" flags="wfNoBorder">
 		<panel name="ServiceInfoSimple"/>
-		<panel name="ButtonTemplate4"/>
+		<panel name="ButtonTemplateRGYB"/>
 		<widget source="session.CurrentService" render="Label" position="250,600" size="950,20" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;20" halign="right">
 				<convert type="ServiceInfo">HasHBBTV</convert>
 		</widget>
