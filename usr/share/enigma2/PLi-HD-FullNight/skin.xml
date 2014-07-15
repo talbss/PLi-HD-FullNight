@@ -146,8 +146,8 @@
 
 	<screen name="SelectionTemplate">
 		<panel name="BasicTemplate"/>
-		<widget source="session.VideoPicture" render="Pig" position="25,98" size="440,248" backgroundColor="transparent" zPosition="2"/>
-		<widget source="session.CurrentService" render="Label" position="25,98" size="440,20" zPosition="3" borderWidth="1" borderColor="black" foregroundColor="white" backgroundColor="#ff000000" transparent="1" font="Regular;18" noWrap="1" valign="center" halign="center">
+		<widget source="session.VideoPicture" render="Pig" position="25,105" size="440,248" backgroundColor="transparent" zPosition="2"/>
+		<widget source="session.CurrentService" render="Label" position="25,105" size="440,20" zPosition="3" borderWidth="1" borderColor="black" foregroundColor="white" backgroundColor="#ff000000" transparent="1" font="Regular;18" noWrap="1" valign="center" halign="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 	</screen>
