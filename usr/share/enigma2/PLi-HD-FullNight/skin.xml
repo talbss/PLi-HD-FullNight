@@ -97,8 +97,8 @@
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<eLabel backgroundColor="infobarBG" position="120,56" size="1040,14" zPosition="0"/>
-		<ePixmap pixmap="PLi-HD/dvr/scale1024.png" position="128,61" size="1024,4" zPosition="1"/>
-		<widget source="session.CurrentService" render="PositionGauge" position="128,57" size="1024,12" transparent="1" zPosition="4" pointer="PLi-HD/dvr/position_pointer1024.png:1012,0">
+		<ePixmap pixmap="PLi-HD-FullNight/dvr/scale1024.png" position="128,61" size="1024,4" zPosition="1"/>
+		<widget source="session.CurrentService" render="PositionGauge" position="128,57" size="1024,12" transparent="1" zPosition="4" pointer="PLi-HD-FullNight/dvr/position_pointer1024.png:1012,0">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="128,31" size="90,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center">
@@ -114,7 +114,7 @@
 
 	<screen name="PlayerTemplate">
 		<panel name="PlayerTemplateBasic"/>
-		<widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD/buttons/rec.png" position="1160,53" size="20,20" zPosition="3" alphatest="on">
+		<widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD-FullNight/buttons/rec.png" position="1160,53" size="20,20" zPosition="3" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" borderWidth="2" position="1052,3" size="100,25" backgroundColor="transparent" noWrap="1" zPosition="1" foregroundColor="foreground" font="Regular;22" valign="center" halign="right">
@@ -439,7 +439,7 @@
 		<widget source="global.CurrentTime" render="Label" borderWidth="2" position="89,583" size="37,29" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="white" font="Regular;20" valign="bottom">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD/buttons/rec.png" position="145,588" size="20,20" zPosition="3" alphatest="on">
+		<widget source="session.RecordState" render="Pixmap" pixmap="PLi-HD-FullNight/buttons/rec.png" position="145,588" size="20,20" zPosition="3" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="session.CurrentService" render="Label" borderWidth="2" position="455,550" size="640,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;16" valign="center" halign="right">
@@ -570,19 +570,19 @@
 
 	<screen name="MoviePlayer" title="InfoBar" position="0,45" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="PlayerTemplate"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_dolby_on.png" position="1078,70" size="33,21" zPosition="2" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD-FullNight/infobar/ico_dolby_on.png" position="1078,70" size="33,21" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_hd.png" position="1112,70" size="40,21" zPosition="4" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD-FullNight/infobar/ico_format_hd.png" position="1112,70" size="40,21" zPosition="4" alphatest="on">
 			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_16_9.png" position="1112,70" size="40,21" zPosition="2" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD-FullNight/infobar/ico_format_16_9.png" position="1112,70" size="40,21" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsSDAndWidescreen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD/infobar/ico_format_4_3.png" position="1112,70" size="40,21" zPosition="2" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="PLi-HD-FullNight/infobar/ico_format_4_3.png" position="1112,70" size="40,21" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsSDAndNotWidescreen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -602,7 +602,7 @@
 	</screen>
 
 	<screen name="ChapterZap" position="center,center" size="240,55" title="Chapter" flags="wfNoBorder">
-		<ePixmap alphatest="off" pixmap="PLi-HD/infobar/bl80.png" position="0,0" size="240,55" zPosition="-1"/>
+		<ePixmap alphatest="off" pixmap="PLi-HD-FullNight/infobar/bl80.png" position="0,0" size="240,55" zPosition="-1"/>
 		<widget name="chapter" position="20,15" size="120,26" font="Regular;23" backgroundColor="secondBG" foregroundColor="secondFG" transparent="1"/>
 		<widget name="number" position="140,15" size="80,26" halign="right" font="Regular;23" zPosition="1" transparent="1"/>
 	</screen>
@@ -1948,7 +1948,7 @@
 		<widget name="text" position="65,8" size="520,0" font="Regular;22"/>
 		<widget name="ErrorPixmap" pixmap="skin_default/icons/input_error.png" position="5,5" size="53,53" alphatest="on"/>
 		<widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="5,5" size="53,53" alphatest="on"/>
-		<widget name="InfoPixmap" pixmap="PLi-HD/icons/input_info.png" position="5,5" size="53,53" alphatest="on"/>
+		<widget name="InfoPixmap" pixmap="PLi-HD-FullNight/icons/input_info.png" position="5,5" size="53,53" alphatest="on"/>
 		<widget name="list" position="100,100" size="480,375"/>
 	<applet type="onLayoutFinish">
 from enigma import eSize, ePoint
@@ -2819,15 +2819,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 	<gstyle>
 		<gstyles filename="PLi-HD-FullNight/window/separator.png#cached"/>
-	 </gstyle>
+	</gstyle>
 
-	<screen name="Dish" flags="wfNoBorder" position="86,100" size="130,200" title="Dish" zPosition="1" backgroundColor="transparent">
-		<widget name="Dishpixmap" position="0,0" size="130,160" zPosition="-1" pixmap="PLi-HD-FullNight/icons/dish.png" transparent="1" alphatest="on"/>
-		<widget name="turnTime" position="5,0" size="120,20" zPosition="1" font="Regular;18" halign="right" shadowColor="black" shadowOffset="-2,-2" transparent="1"/>
-		<eLabel name="From" position="5,164" size="45,16" zPosition="1" font="Regular;16" shadowColor="black" shadowOffset="-2,-1" transparent="1" text="From:"/>
-		<widget name="posFrom" position="55,160" size="70,20" zPosition="1" font="Regular;20" shadowColor="black" shadowOffset="-2,-2" transparent="1"/>
-		<eLabel name="Goto" position="5,184" size="45,16" zPosition="1" font="Regular;16" shadowColor="black" shadowOffset="-2,-1" transparent="1" text="Goto:"/>
-		<widget name="posGoto" position="55,180" size="70,20" zPosition="1" font="Regular;20" shadowColor="black" shadowOffset="-2,-2" transparent="1"/>
+	<screen name="Dish" flags="wfNoBorder" position="100,150" size="130,202" title="Dish" zPosition="1" backgroundColor="transparent" >
+		<widget name="Dishpixmap" position="0,0" size="130,160" zPosition="-1" pixmap="PLi-HD/icons/dish.png" transparent="1" alphatest="on" />
+		<widget name="turnTime" position="45,5" size="80,20" zPosition="1" font="Regular;18" halign="right" borderWidth="1" transparent="1" />
+		<widget name="From" position="5,164" size="45,18" zPosition="1" font="Regular;16" halign="left" borderWidth="1" transparent="1" />
+		<widget name="posFrom" position="55,160" size="70,22" zPosition="1" font="Regular;20" halign="left" borderWidth="1" transparent="1" />
+		<widget name="Goto" position="5,184" size="45,18" zPosition="1" font="Regular;16" halign="left" borderWidth="1" transparent="1" />
+		<widget name="posGoto" position="55,180" size="70,22" zPosition="1" font="Regular;20" halign="left" borderWidth="1" transparent="1" />
+		<widget name="tunerName" position="5,144" size="100,14" zPosition="1" font="Regular;12" halign="left" borderWidth="1" transparent="1" />
+		<widget name="turnSpeed" position="75,98" size="50,16" zPosition="1" font="Regular;14" halign="right" borderWidth="1" transparent="1" />
 	</screen>
 
 	<screen name="UnhandledKey" title="UnhandledKey" position="1100,50" size="34,45" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
