@@ -961,7 +961,7 @@
 
 	<screen name="Console" title="Command execution" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="text" position="530,110" size="740,476" font="Console;21"/>
+		<widget name="text" position="500,98" size="770,565" font="Console;21"/>
 	</screen>
 
 	<!-- NumberZap -->
