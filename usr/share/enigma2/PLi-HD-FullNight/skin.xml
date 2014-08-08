@@ -165,7 +165,7 @@
 	<screen name="MenuTemplate">
 		<panel name="PigTemplate"/>
 		<widget source="title" render="Label" position="25,30" size="1085,55" transparent="1" zPosition="1" font="Regular;24" valign="center"/>
-		<widget source="menu" render="Listbox" position="590,110" size="680,500" font="Regular;24" transparent="1" scrollbarMode="showOnDemand">
+		<widget source="menu" render="Listbox" position="500,98" size="770,540" font="Regular;24" transparent="1" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (45,9),size = (635,30),flags = RT_HALIGN_LEFT,text = 0) ],
 		"fonts": [gFont("Regular",24)],
@@ -613,7 +613,7 @@
 		<panel name="SelectionTemplate"/>
 		<panel name="ButtonTemplate_4"/>
 		<panel name="KeyMenuInfoTemplate"/>
-		<widget name="list" position="530,98" size="740,560" itemHeight="28" picServiceEventProgressbar="PLi-HD-FullNight/window/progress.png" progressbarBorderWidth="1"  progressbarHeight="10" colorEventProgressbarBorder="darkgrey" colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft" transparent="1" serviceNumberFont="Regular;22" scrollbarMode="showOnDemand" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="28" foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565"/>
+		<widget name="list" position="500,98" size="770,560" itemHeight="28" picServiceEventProgressbar="PLi-HD-FullNight/window/progress.png" progressbarBorderWidth="1"  progressbarHeight="10" colorEventProgressbarBorder="darkgrey" colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft" transparent="1" serviceNumberFont="Regular;22" scrollbarMode="showOnDemand" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="28" foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565"/>
 		<widget source="ServiceEvent" render="Label" position="362,390" size="100,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;19" halign="right">
 			<convert type="ServiceOrbitalPosition"/>
 		</widget>
@@ -1251,13 +1251,13 @@
 	<screen name="PluginBrowser" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_RG"/>
-		<widget name="list" position="590,98" size="680,555" font="Regular;26" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+		<widget name="list" position="500,98" size="770,555" font="Regular;26" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<screen name="PluginDownloadBrowser" title="Downloadable plugins" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
-		<widget name="text" position="590,110" size="670,50" zPosition="-1" transparent="1" font="Regular;23" valign="center" halign="center"/>
-		<widget name="list" position="590,110" size="670,500" zPosition="3" transparent="0" scrollbarMode="showOnDemand"/>
+		<widget name="text" position="500,98" size="770,50" zPosition="-1" transparent="1" font="Regular;23" valign="center" halign="center"/>
+		<widget name="list" position="500,98" size="770,550" zPosition="3" transparent="0" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<screen name="FileBrowser" title="DVD File Browser" position="fill" flags="wfNoBorder">
