@@ -665,7 +665,7 @@
 	<screen name="SimpleChannelSelection" position="fill" title="Channel Selection" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_4"/>
-		<widget name="list" position="560,110" size="660,504" scrollbarMode="showOnDemand"/>
+		<widget name="list" position="500,98" size="770,560" scrollbarMode="showOnDemand"/>
 	</screen>
 
 	<!-- EPG Stuff -->
