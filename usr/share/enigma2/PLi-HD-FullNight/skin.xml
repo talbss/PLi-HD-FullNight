@@ -938,7 +938,6 @@
 	<screen name="ChoiceBox" title="" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="TextTemplate"/>
-		<panel name="ButtonTemplate_RG"/>
 		<widget name="list" position="530,110" size="740,500" scrollbarMode="showOnDemand"/>
 	</screen>
 
