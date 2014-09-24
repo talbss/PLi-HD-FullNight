@@ -946,11 +946,6 @@
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_RG"/>
 		<widget name="list" position="530,110" size="740,500" scrollbarMode="showOnDemand"/>
-	</screen>
-	<screen name="HotkeySetupSelect" title="" position="fill" flags="wfNoBorder">
-		<panel name="PigTemplate"/>
-		<panel name="ButtonTemplate_RG"/>
-		<widget name="list" position="530,110" size="740,500" scrollbarMode="showOnDemand"/>
 		<widget name="choosen" position="25,350" size="300,250" scrollbarMode="showOnDemand"/>
 	</screen>
 
