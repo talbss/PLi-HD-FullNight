@@ -665,7 +665,7 @@
 	<screen name="SimpleChannelSelection" position="fill" title="Channel Selection" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<panel name="ButtonTemplate_4"/>
-		<widget name="list" position="500,98" size="770,560" scrollbarMode="showOnDemand"/>
+		<widget name="list" position="500,98" size="770,560" itemHeight="28" picServiceEventProgressbar="PLi-HD-FullNight/window/progress.png" progressbarBorderWidth="1"  progressbarHeight="10" colorEventProgressbarBorder="darkgrey" colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="yellowsoft" transparent="1" serviceNumberFont="Regular;22" scrollbarMode="showOnDemand" serviceInfoFont="Regular;20" serviceNameFont="Regular;22" serviceItemHeight="28" foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565"/>
 	</screen>
 
 	<!-- EPG Stuff -->
