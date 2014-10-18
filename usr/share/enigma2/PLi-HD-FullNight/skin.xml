@@ -105,7 +105,7 @@
 			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="1035,31" size="117,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="right">
-			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+			<convert type="ServicePosition">Remaining,Plus,ShowHours</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="c-100,70" size="200,25" zPosition="2" backgroundColor="transparent" foregroundColor="foreground" font="Regular;20" borderWidth="2" halign="center">
 			<convert type="PliExtraInfo">ResolutionString</convert>
@@ -1089,7 +1089,7 @@
 			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="348,328" size="117,20" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="grey" borderWidth="2" font="Regular;18" borderColor="black" valign="center" halign="right">
-			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+			<convert type="ServicePosition">Remaining,Plus,ShowHours</convert>
 		</widget>
 		<widget name="waitingtext" position="530,108" size="740,560" font="Regular;22" halign="center" valign="center" zPosition="4"/>
 		<widget name="chosenletter" position="530,110" size="740,510" foregroundColor="yellow" font="Regular;75" halign="center" valign="center" transparent="1" zPosition="4"/>
