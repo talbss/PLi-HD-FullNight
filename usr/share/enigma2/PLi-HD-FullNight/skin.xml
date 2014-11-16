@@ -2077,7 +2077,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<screen name="FastScanScreen" title="Fast Scan" position="fill" flags="wfNoBorder">
 		<panel name="PigTemplate"/>
 		<widget name="config" position="530,110" size="690,500" scrollbarMode="showOnDemand"/>
-		<widget name="introduction" position="530,500" size="700,30" font="Regular;24"/>
+		<widget name="introduction" position="20,360" size="500,100" font="Regular;24"/>
 		<panel name="ButtonRed"/>
 		<eLabel text="Cancel" position="185,683" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24"/>
 		<panel name="ButtonGreen"/>
@@ -2087,6 +2087,25 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<screen name="FastScanStatus" title="Fast Scan" position="fill" flags="wfNoBorder">
 		<panel name="BasicTemplate"/>
 		<widget name="frontend" pixmap="skin_default/icons/scan-s.png" position="80,120" size="64,64" zPosition="2" transparent="1" alphatest="on"/>
+		<widget name="scan_state" position="150,120" zPosition="2" size="480,30" valign="center" font="Regular;20" transparent="1"/>
+		<widget name="scan_progress" position="150,155" size="480,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc"/>
+	</screen>
+
+	<!-- CableScan -->
+
+	<screen name="CableScanScreen" title="Cable Scan" position="fill" flags="wfNoBorder">
+		<panel name="PigTemplate"/>
+		<widget name="config" position="530,110" size="690,500" scrollbarMode="showOnDemand"/>
+		<widget name="introduction" position="20,360" size="500,100" font="Regular;24"/>
+		<panel name="ButtonRed"/>
+		<eLabel text="Cancel" position="185,683" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24"/>
+		<panel name="ButtonGreen"/>
+		<eLabel text="Save" position="460,683" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24"/>
+	</screen>
+
+	<screen name="CableScanStatus" title="Cable Scan" position="fill" flags="wfNoBorder">
+		<panel name="BasicTemplate"/>
+		<widget name="frontend" pixmap="skin_default/icons/scan-c.png" position="80,120" size="64,64" zPosition="2" transparent="1" alphatest="on"/>
 		<widget name="scan_state" position="150,120" zPosition="2" size="480,30" valign="center" font="Regular;20" transparent="1"/>
 		<widget name="scan_progress" position="150,155" size="480,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc"/>
 	</screen>
